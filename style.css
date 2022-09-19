@@ -111,9 +111,11 @@ main {
   background-color: hsl(0, 0%, 100%);
 }
 
-/* .card-thankyou {
+/* Miss Temi seciton */
+
+.card-thankyou {
   display: none;
-} */
+}
 
 .attribution {
   font-size: 1.1rem;
