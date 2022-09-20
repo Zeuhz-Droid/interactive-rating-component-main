@@ -15,7 +15,7 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 1.6rem; /* (1.6 * 16)px */
   line-height: 1.5;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.05rem;
   background-color: hsl(216, 12%, 8%);
 }
 
@@ -38,11 +38,16 @@ body {
   padding: 5rem;
   border-radius: 2rem;
   margin-inline: auto;
-  background-color: hsl(213, 19%, 18%);
+  background-image: radial-gradient(
+    ellipse at top,
+    hsl(213, 19%, 18%),
+    transparent
+  );
 }
 
 .card-greet {
   display: flex;
+  display: none;
   flex-direction: column;
   gap: 3rem;
 }
@@ -54,6 +59,11 @@ body {
   border-radius: 50%;
   background-color: hsl(216, 12%, 54%);
   opacity: 0.5;
+}
+
+.card-heading {
+  line-height: 0.5;
+  margin-top: 2rem;
 }
 
 .heading-1 {
@@ -161,7 +171,6 @@ body {
 
 .card-thankyou {
   display: flex;
-  display: none;
   flex-direction: column;
   gap: 1.5rem;
 }
