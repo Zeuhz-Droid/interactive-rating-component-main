@@ -42,7 +42,8 @@ main {
 }
 
 .card-greet {
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   gap: 3rem;
 }
@@ -81,7 +82,7 @@ main {
   font-weight: inherit;
   font-family: inherit;
   color: hsl(0, 0%, 100%);
-  background-color: transparent;
+  background-color: transparent; 
 }
 
 .btn-ratings {
@@ -114,8 +115,43 @@ main {
 /* Miss Temi seciton */
 
 .card-thankyou {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
+
+.thankyou-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-select{
+  width: 25rem;
+  height: 3rem;
+  margin: 1rem auto;
+  padding: .5rem 0;
+  border-radius: 2rem;
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  background-color:  hsla(216, 12%, 54%, .1);
+}
+
+.thankyou-text, .thankyou{
+  text-align: center;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 .attribution {
   font-size: 1.1rem;
