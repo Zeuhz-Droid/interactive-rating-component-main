@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Overpass", sans-serif;
+  font-family: 'Overpass', sans-serif;
   font-size: 1.6rem; /* (1.6 * 16)px */
   line-height: 1.5;
   letter-spacing: 0.05rem;
@@ -47,7 +47,7 @@ body {
 
 .card-greet {
   display: flex;
-  display: none;
+  /* display: none; */
   flex-direction: column;
   gap: 3rem;
 }
@@ -98,6 +98,17 @@ body {
   background-color: transparent;
 }
 
+.btn-label {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  z-index: 2;
+}
+
+.btn-rating {
+  width: 0;
+  height: 0;
+}
+
 .btn-label,
 .btn-rating::before {
   position: absolute;
@@ -106,19 +117,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.btn-label {
-  font-size: 2rem;
-  color: hsl(0, 0%, 100%);
-  z-index: 10;
-}
-
-.btn-rating {
-  width: 0;
-  height: 0;
-}
-
 .btn-rating::before {
-  content: "";
+  content: '';
   width: 7rem;
   height: 7rem;
   z-index: 1;
@@ -138,7 +138,7 @@ body {
 }
 
 /* STYLES WE USED FORMALLY */
-/* .btn-ratings {
+.btn-ratings {
   width: 7rem;
   height: 7rem;
   opacity: 0.6;
@@ -150,7 +150,7 @@ body {
 .btn-ratings:hover {
   background-color: hsl(217, 12%, 63%);
   opacity: 0.5;
-} */
+}
 
 .btn-submit {
   padding: 2rem 0;
@@ -169,8 +169,17 @@ body {
 
 /* Miss Temi seciton */
 
+/* ID CLASSES ELEMENTS */
+/* .card-greet.hide {
+  display: none;
+}
+
+.card-thankyou.hide {
+  display: none;
+} */
+
 .card-thankyou {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -204,4 +213,31 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 62.5em) {
+  html {
+    font-size: 54%;
+  }
+
+  .card {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  /* find the difference rem and em */
+  html {
+    font-size: 50%;
+  }
+
+  .heading-1 {
+    font-size: 4rem;
+  }
+
+  .card {
+    width: 90vw;
+    padding: 3rem;
+  }
 }
