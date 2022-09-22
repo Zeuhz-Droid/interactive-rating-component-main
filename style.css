@@ -240,4 +240,13 @@ body {
     width: 90vw;
     padding: 3rem;
   }
+
+  .btn-rating::before {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .btn-submit {
+    padding: 1.5rem;
+  }
 }
